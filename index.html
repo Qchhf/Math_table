@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikācija</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Reizināšanas Tabula</h2> 
+
+    <div id="bord_container">
+
+        <p>
+            Ievadīt M vērtību(līdz)<br>
+            <input type="text" id="number_m"><br>
+        </p>
+        
+        <p>
+            Ievadīt N vērtību(līdz)<br>
+            <input type="text" id="number_n"><br>
+        </p>
+
+        <p>
+            Ievadīt M vērtību(no)<br>
+            <input type="text" id="number_m1"><br>
+        </p>
+
+        <p>
+            Ievadīt N vērtību(no)<br>
+            <input type="text" id="number_n1"><br>
+        </p>
+
+        <p>
+            <button onclick="CauculateTable()">Izveidot tabulu</button>
+        </p>
+    </div>
+
+    <div id="container"></div>
+        
+    
+
+
+    <script>
+        function CauculateTable(){
+            let container = document.getElementById("container");
+            let f = Number(document.getElementById("number_m").value)
+            let g = Number(document.getElementById("number_n").value)
+            let m1 = Number(document.getElementById("number_m1").value)
+            let n1 = Number(document.getElementById("number_n1").value)
+
+            for(let m = m1; m <= f; m++){
+            container.innerHTML += `Reizināšana ${m}<br>`
+                for(let n = n1; n <= g; n++){
+                    container.innerHTML += `${m} x ${n} = ${m*n}<br>`
+                }
+            }
+        }
+        
+
+            
+            
+                
+    
+    
+    </script>
+
+</body>
+</html>

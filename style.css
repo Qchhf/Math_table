@@ -1,0 +1,19 @@
+input {
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:yellowgreen;
+}
+button{
+    border-radius: 10px;
+    padding: 5px;
+    background-color:royalblue;
+    color: beige;
+}
+#bord_container{
+    background-color: burlywood;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
